@@ -5,18 +5,17 @@ This README outlines the steps to implement a robust monitoring system for a MER
 ---
 
 ## Table of Contents
-1. Objective
-2. System Architecture Overview
-3. Prerequisites
-4. Setup Instructions
-    - Step 1: Set up the MERN Application
-    - Step 2: Integrate Prometheus for Metrics Collection
-    - Step 3: Build Grafana Dashboards for Metrics Visualization
-    - Step 4: Implement Log Aggregation
-    - Step 5: Add Distributed Tracing
-    - Step 6: Configure Alerting and Anomaly Detection
-5. Documentation and Analysis
-6. Conclusion
+1. [Objective](#objective)
+2. [System Architecture Overview](#system-architecture-overview)
+3. [Prerequisites](#prerequisites)
+4. [Setup Instructions](#setup-instructions)
+    - [Step 1: Set up the MERN Application](#step-1-set-up-the-mern-application)
+    - [Step 2: Integrate Prometheus for Metrics Collection](#step-2-integrate-prometheus-for-metrics-collection)
+    - [Step 3: Build Grafana Dashboards for Metrics Visualization](#step-3-build-grafana-dashboards-for-metrics-visualization)
+    - [Step 4: Implement Log Aggregation](#step-4-implement-log-aggregation)
+    - [Step 5: Add Distributed Tracing](#step-5-add-distributed-tracing)
+    - [Step 6: Configure Alerting and Anomaly Detection](#step-6-cofigure-alerting-and-anomaly-detection)
+5. [Conclusion](#conclusion)
 
 ---
 ## Objective
@@ -151,3 +150,6 @@ const { SimpleSpanProcessor } = require('@opentelemetry/tracing');
 - Set anomaly detection rules for unusual spikes or patterns in application metrics and logs.
 ![image5](./images/image5.png)
 ![image4](./images/image4.png)
+
+### Conclusion
+This guide provided an end-to-end setup for monitoring, logging, and tracing in a MERN application using Grafana, Prometheus, Loki, and Jaeger. The setup enables developers to monitor application performance, quickly troubleshoot issues, and gain insight into resource usage and behavior.
