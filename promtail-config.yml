@@ -1,0 +1,20 @@
+server:
+  http_listen_port: 9080
+  grpc_listen_port: 0
+
+positions:
+  filename: /tmp/positions.yaml
+
+clients:
+  - url: http://13.126.55.223:3100/loki/api/v1/push  # URL for Loki instance
+
+scrape_configs:
+  - job_name: "pm2-logs"
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: "mern-app"
+          # Path to PM2 logs (adjust `app-name` as needed)
+          __path__: /root/.pm2/logs/*.log
+
